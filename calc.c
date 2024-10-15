@@ -3,11 +3,11 @@
 int main(){
 char operator;
 int a, b ;
-printf("Enter the Operator: ");
+printf("Enter the Operator: "); //First entereing the operator
 scanf("%c", &operator);
 
 
-printf("Enter the number one after one: ");
+printf("Enter the number one after one: ");//Takijg two inputs of the number between which we have to perform operations
 scanf("%d %d",&a,&b);
 switch(operator){
     case '+':
