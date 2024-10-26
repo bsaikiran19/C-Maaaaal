@@ -8,6 +8,7 @@ void account_details();
 void transfer_money();
 void account_details();
 void withdraw_money();
+void last_details();
 
 int amt,dip_amt,trans_amt,total_amount=10000,account_no,raccount_no,w_money;
 int main(){
@@ -39,6 +40,7 @@ int choice;
      withdraw_money();
      break;
     case 6:
+        last_details();
      exit(0);
     default:
         printf("Invalid Number !!!");
@@ -117,3 +119,16 @@ void transaction_details(){
     printf("Account number of holder : %d\n",account_no);
     printf("Name of the account holder : %c\n",name);
 }
+
+
+
+void last_details()
+    {
+        printf("Name : %s \n", name);
+        printf("Account No. :%d \n ",account_no);
+        printf("Current Balance : %d \n",total_amount);
+
+
+        printf("Enter any key......");
+        getch();
+    }
